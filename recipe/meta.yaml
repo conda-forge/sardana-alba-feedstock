@@ -1,5 +1,5 @@
 {% set name = "sardana-alba" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ALBA-Synchrotron/sardana-alba/archive/{{ version }}.tar.gz
-  sha256: ff4a9e1d82dfd639168974387f1de4d5bab2636e01764650afdfabe78b6186d8
+  sha256: 6adb923e36707aeebe600b7103505d722b99d0d97df1daa30a079af0e39a0f55
 
 build:
   noarch: python
@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - python >=3.5
+    - setuptools
     - pip
   run:
     - python >=3.5
